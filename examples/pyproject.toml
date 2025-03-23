@@ -1,0 +1,18 @@
+[project]
+name = "examples"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "langgraph>=0.2.70",
+    "openai>=1.61.1",
+]
+
+[tool.uv.sources]
+batch-bridge = { workspace = true }
+
+[dependency-groups]
+dev = [
+    "langgraph-cli[inmem]>=0.1.71",
+]
