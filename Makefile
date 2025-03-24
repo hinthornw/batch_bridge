@@ -42,6 +42,7 @@ format:
 lint:
 	uv run ruff format --check ./src
 	uv run ruff check ./src
+	uv run mypy ./src
 
 # Check the docs for linting violations
 lint-docs:

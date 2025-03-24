@@ -1,19 +1,12 @@
 [project]
 name = "batch-bridge"
-version = "0.0.1"
+version = "0.0.1-rc0"
 description = "Prebuilt utilities for memory management and retrieval."
 readme = "README.md"
 requires-python = ">=3.11"
 license = { file = "LICENSE" }
 dependencies = [
-    "langchain>=0.3.15",
-    "langchain-core>=0.3.46",
-    "langchain-openai>=0.3.1",
-    "trustcall>=0.0.37",
     "langgraph>=0.2.66",
-    "langchain-anthropic>=0.3.3",
-    "langsmith>=0.3.8",
-    "langgraph-checkpoint>=2.0.12",
     "langgraph-api>=0.0.33",
 ]
 
@@ -27,13 +20,10 @@ build-backend = "hatchling.build"
 [dependency-groups]
 dev = [
     "anyio>=4.8.0",
-    "langchain-anthropic>=0.3.3",
-    "langchain-openai>=0.3.1",
     "langgraph-cli[inmem]>=0.1.70",
     "pytest>=8.3.4",
     "pytest-watch>=4.2.0",
     "pytest-xdist>=3.6.1",
-    "langgraph-prebuilt>=0.1.1",
 ]
 docs = [
     "markdown-callouts>=0.4.0",
@@ -54,7 +44,7 @@ docs = [
 ]
 
 [tool.uv.workspace]
-members = ["evals/gen", "examples"]
+members = ["examples"]
 
 [tool.ruff]
 lint.select = ["E", "F", "I", "TID251"]

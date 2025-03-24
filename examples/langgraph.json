@@ -1,5 +1,5 @@
 {
    "dependencies": ["."],
-   "graphs": {"chat": "./examples/graph.py:graph", "bridge": "./examples/graph.py:bridge"},
+   "graphs": {"chat": "./examples/graph.py:graph"},
    "env": ".env"
 }
